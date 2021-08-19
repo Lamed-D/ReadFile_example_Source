@@ -14,5 +14,5 @@ int main()
     char buf[256];
     DWORD dwRead;
     ReadFile(File, buf, sizeof(buf), &dwRead, NULL);
-    printf("%s", buf);
+    printf("%s %d", buf, dwRead);
 }
